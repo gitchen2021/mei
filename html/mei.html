@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../js/ajax.js"></script>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/dist/index.css">
+  
+    <script src="../js/quan.js"></script>
+
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="header">
+            <div class="nav1">
+                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                <span class="a2">北京</span>
+                <span class="a3">[<a href="">佛山</a><a href="">顺德</a><a href="">南沙 </a> ]</span>
+                <a href="./login.html" class="li">立即登录</a>
+                <span class="a6"> <a href="./zhuce.html" class="ce">注册</a></span>
+
+            </div>
+
+            <ul class="nav2">
+                <li class="a5"><a href="">我的美团</a>
+
+
+                    <ul>
+
+                        <li><a href="">我的订单</a></li>
+                        <li><a href="">我的收藏</a></li>
+                        <li><a href="">抵用券</a></li>
+                        <li><a href="">账户设置</a></li>
+
+
+                    </ul>
+                </li>
+                <li class="a5"><a href="">手机APP</a></li>
+                <li class="a5"><span>商家中心</span>
+                    <ul>
+
+                        <li><a href="">美团餐饮商户中心</a></li>
+                        <li><a href="">登录商家中心</a></li>
+                        <li><a href="">美团智能收银</a></li>
+                        <li><a href="">我想合作</a></li>
+
+
+
+                        <li><a href="">手机免费开店</a></li>
+                        <li><a href="">餐饮代理商招募</a></li>
+                        <li><a href="">商家申请开票</a></li>
+                        <li><a href="">免费合作美团排队</a></li>
+
+                    </ul>
+                </li>
+                <li class="a5"><span>美团规则</span>
+                    <ul>
+                        <li><a href="">规则中心</a></li>
+                        <li><a href="">规则目录</a></li>
+                        <li><a href="">规则评议院</a></li>
+
+                    </ul>
+                </li>
+                <li class="a5"><span>网站导航</span>
+                    <ul>
+                        <li><a href="">酒店旅游</a></li>
+                        <li><a href="">吃美食</a></li>
+                        <li><a href="">看电影</a></li>
+
+                        <li><a href="">手机应用</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+    <!-- </div> -->
+    <div id="search">
+        <div class="search">
+            <img src="../img/1.png" alt="">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="搜索商家或地名" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">搜索一下</span>
+            </div>
+            <!-- <ul></ul> -->
+        </div>
+    </div>
+    <div id="main">
+        <div class="main">
+            <div class="cc"></div>
+            <div class="xuanze">
+                <span>按省份选择：</span>
+
+                <div class="dropdown shengfen">
+                    <button class="btn sheng btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        省份
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu text1" aria-labelledby="dropdownMenu1">
+                        <span>省份</span>
+                        <!-- <li>/</li> -->
+                    </ul>
+                </div>
+
+                <div class="dropdown chengshi">
+                    <button class="btn cheng btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" value="">城市
+
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu text2" aria-labelledby="dropdownMenu1">
+
+                    </ul>
+                </div>
+                <span class="sou">直接搜索：
+
+
+                </span>
+                <input type="text" class="form-control suoText" placeholder="请输入城市中文或拼音"
+                    aria-describedby="basic-addon1">
+                <!-- <ul></ul> -->
+            </div>
+
+            <div class="remen">
+                <div>热门城市：</div>
+                <ul>
+                    <li><a href="">北京</a></li>
+                    <li><a href="">上海</a></li>
+                    <li><a href="">广州</a></li>
+                    <li><a href="">深圳</a></li>
+                    <li><a href="">天津</a></li>
+                    <li><a href="">西安</a></li>
+                    <li><a href="">重庆</a></li>
+                    <li><a href="">杭州</a></li>
+                    <li><a href="">南京</a></li>
+                    <li><a href="">武汉</a></li>
+                    <li><a href="">成都</a></li>
+                </ul>
+            </div>
+            <div class="city">
+                <span class="anPing">
+                    <span>按拼音首字母选择：</span>
+                    <ul>
+                        <li><a href="">A</a></li>
+                        <li><a href="">B</a></li>
+                        <li><a href="">C</a></li>
+                        <li><a href="">D</a></li>
+                        <li><a href="">E</a></li>
+                        <li><a href="">F</a></li>
+                        <li><a href="">G</a></li>
+                        <li><a href="">H</a></li>
+                        <li><a href="">J</a></li>
+                        <li><a href="">K</a></li>
+                        <li><a href="">L</a></li>
+                        <li><a href="">M</a></li>
+                        <li><a href="">N</a></li>
+                        <li><a href="">P</a></li>
+                        <li><a href="">Q</a></li>
+                        <li><a href="">R</a></li>
+                        <li><a href="">S</a></li>
+                        <li><a href="">T</a></li>
+                        <li><a href="">W</a></li>
+                        <li><a href="">X</a></li>
+                        <li><a href="">Y</a></li>
+                        <li><a href="">Z</a></li>
+                    </ul>
+                </span>
+                <div class="A">
+                    <span>A</span>
+                    <!-- <ul></ul> -->
+                </div>
+                <div class="B"><span>B</span></div>
+                <div class="C"><span>C</span></div>
+                <div class="D"><span>D</span></div>
+                <div class="E"><span>E</span></div>
+                <div class="F"><span>F</span></div>
+                <div class="G"><span>G</span></div>
+                <div class="H"><span>H</span></div>
+                <div class="J"><span>J</span></div>
+                <div class="K"><span>K</span></div>
+                <div class="L"><span>L</span></div>
+                <div class="M"><span>M</span></div>
+                <div class="N"><span>N</span></div>
+                <div class="P"><span>P</span></div>
+                <div class="Q"><span>Q</span></div>
+                <div class="R"><span>R</span></div>
+                <div class="S"><span>S</span></div>
+                <div class="T"><span>T</span></div>
+                <div class="W"><span>W</span></div>
+                <div class="X"><span>X</span></div>
+                <div class="Y"><span>Y</span></div>
+                <div class="Z"><span>Z</span></div>
+            </div>
+            <div class="dd"></div>
+
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer">
+            <div class="foot1">
+                <span>用户帮助</span>
+                <ul>
+                    <li><a href="">申请退款</a></li>
+                    <li><a href="">常见问题</a></li>
+                    <li><a href="">用户协议</a></li>
+                    <li><a href="">隐私政策</a></li>
+                    <li><a href="">反诈骗公告</a></li>
+                    <li><a href="">消费者权益保障</a></li>
+                </ul>
+            </div>
+            <div class="foot2">
+                <span>美团服务</span>
+                <ul>
+                    <li><a href="">美团外卖</a></li>
+                    <li><a href="">美团酒店</a></li>
+                    <li><a href="">猫眼电影</a></li>
+                    <li><a href="">美团配送</a></li>
+                    <li><a href="">美团云</a></li>
+                    <li><a href="">大众点评</a></li>
+                    <li><a href="">美团民宿</a></li>
+                    <li><a href="">无人配送</a></li>
+                </ul>
+            </div>
+            <div>
+                <span>商家合作</span>
+                <ul>
+                    <li><a href="">美团餐饮商户中心</a></li>
+                    <li><a href="">美食商家入驻(非外卖)</a></li>
+                    <li><a href="">美团外卖开店申请</a></li>
+                    <li><a href="">美团收银官网</a></li>
+                    <li><a href="">美团配送合作申请</a></li>
+                    <li><a href="">美团餐饮学院</a></li>
+                    <li><a href="">酒店商家入驻</a></li>
+                    <li><a href="">境内度假商家入驻</a></li>
+                    <li><a href="">综合商家入驻</a></li>
+                    <li><a href="">美团民宿房东商家入驻</a></li>
+                    <li><a href="">商家开票申请</a></li>
+                    <li><a href="">美团智能收银机</a></li>
+                    <li><a href="">美团餐饮开放平台</a></li>
+                    <li><a href="">美团收单</a></li>
+                    <li><a href="">免费使用美团排队</a></li>
+                    <li><a href="">快驴进货商家合作</a></li>
+                    <li><a href="">美团闪购商家入驻</a></li>
+                </ul>
+            </div>
+            <div>
+                <span>合作商招募</span>
+                <ul>
+                    <li><a href="">美团外卖合作商招募</a></li>
+                    <li><a href="">到店餐饮合作商招募</a></li>
+                    <li><a href="">到店综合业务合作商招募</a></li>
+                    <li><a href="">美团民宿房东商家入驻</a></li>
+                    <li><a href="">美团联盟</a></li>
+                    <li><a href="">美团收银招募线上分销商</a></li>
+                    <li><a href="">美团5S服务商招募</a></li>
+                    <li><a href="">美团收单合作商招募</a></li>
+                    <li><a href="">美团充电宝合作商招募</a></li>
+                </ul>
+            </div>
+            <div class="foot5">
+                <span>美团规则</span>
+                <ul>
+                    <li><a href="">规则中心</a></li>
+                    <li><a href="">规则目录</a></li>
+                    <li><a href="">规则评议院</a></li>
+                </ul>
+            </div>
+            <div class="foot6">
+                <span>关注美团</span>
+                <ul>
+                    <li><a href="">美团新浪微博</a></li>
+                </ul>
+            </div>
+            <div>
+                <span>公司信息</span>
+                <ul>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">投资者关系</a></li>
+                    <li><a href="">加入我们</a></li>
+                    <li><a href="">商户诚信公约及管理办法</a></li>
+                    <li><a href="">保险经纪资质</a></li>
+                </ul>
+            </div>
+            <div>
+                <span>廉正举报</span>
+                <ul>
+                    <li><a href="">廉正举报平台</a></li>
+                </ul>
+            </div>
+            <div class="foot9">
+                <span>知识产权</span>
+                <ul>
+                    <li><a href="">知识产权维权平台</a></li>
+                </ul>
+            </div>
+            <div>
+                <span>消费者服务热线
+                    <ul>
+                        <li><a href="">外卖消费者：10109777</a></li>
+                        <li><a href="">猫眼消费者：10105335</a></li>
+                        <li><a href="">其他消费者：10107888</a></li>
+                    </ul>
+            </div>
+            <div class="foot11">
+                <span>商家服务热线</span>
+                <ul>
+                    <li><a href="">外卖&餐饮商家：10105557</a></li>
+                    <li><a href="">休闲娱乐、丽人、ktv、教育、结婚、亲子、家装等商家：10100107</a></li>
+                </ul>
+            </div>
+            <div class="foot12">
+                <span>投诉举报专区</span>
+                <ul>
+                    <li><a href="">违法和不良信息举报电话：4006018900</a></li>
+                    <li><a href="">举报邮箱：tousujubao@meituan.com</a></li>
+                    <li><a href="">网上有害信息举报</a></li>
+                </ul>
+            </div>
+            <li class="foot13"><a href="">商家自助入驻美团入口</a></li>
+            <li class="foot14"><a href="">供应商注册入口</a></li>
+        </div>
+    </div>
+
+
+    <script>
+        // 设置导航的下拉菜单
+        // let lis = $('.header .nav2 .a5');
+        // lis.hover(function () {
+        //     $(this).find('ul').slideToggle()
+        // }, function () {
+        //     $(this).find('ul').slideUp()
+        // })
+
+        let input = $('.form-control');
+        let sea = $('.input-group-addon');
+        // 搜索框内容发生改变并失去焦点时触发事件
+        input.change(function () {
+            if (input.val()) {
+                let xhr = new XMLHttpRequest();
+                xhr.open('get',
+                    `/hua?keyword=${input.val()}`
+                );
+                xhr.send();
+                xhr.onload = function () {
+                    let res = JSON.parse(xhr.responseText);
+                    search(res.data.suggestItems);
+                    liBtn();
+
+                }
+            }
+            // 当搜索框的内容为空的时候，让ul隐藏
+            if (!(input.val())) {
+                $('.search ul').css('display', 'none');
+            } else {
+                // 当搜索框的内容存在时。并点击html时隐藏ul
+                $('html').click(function () {
+                    $('.search ul').css('display', 'none');
+                });
+            }
+        })
+        getdiming();
+        // 异步请求json数据，设置省名的市名，并跳转链接
+        async function getdiming() {
+            let data = await pAjax({
+                url: '../json/diming.json'
+            })
+            data = JSON.parse(data)
+
+            diMing($(data));
+            Ping($(data));
+            rand($(data), $('.A span'));
+            rand($(data), $('.B span'));
+            rand($(data), $('.C span'));
+            rand($(data), $('.D span'));
+            rand($(data), $('.E span'));
+            rand($(data), $('.F span'));
+            rand($(data), $('.G span'));
+            rand($(data), $('.H span'));
+            rand($(data), $('.J span'));
+            rand($(data), $('.K span'));
+            rand($(data), $('.L span'));
+            rand($(data), $('.M span'));
+            rand($(data), $('.N span'));
+            rand($(data), $('.P span'));
+            rand($(data), $('.Q span'));
+            rand($(data), $('.R span'));
+            rand($(data), $('.S span'));
+            rand($(data), $('.T span'));
+            rand($(data), $('.W span'));
+            rand($(data), $('.X span'));
+            rand($(data), $('.Y span'));
+            rand($(data), $('.Z span'));
+
+        }
+    </script>
+
+</body>
+
+</html>

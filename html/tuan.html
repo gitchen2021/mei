@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情页</title>
+    <script src="../js/cookie.js"></script>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <!-- <script src="../bootstrap/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="../swiper-master/package/swiper-bundle.min.css">
+    <script src="../swiper-master/package/swiper-bundle.min.js"></script>
+    <script src="../font_objvtuh74ij/iconfont.js"></script>
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/tuan.js"></script>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/dist/tuan.css">
+    <style>
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+    <style type="text/css">
+        .swiper-container .hide {
+            opacity: 0;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            transition: opacity 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="header">
+        </div>
+    </div>
+
+    <div id="search">
+        <div class="search">
+            <a href=""><img src="../img/1.png" alt=""></a>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="搜索商家或地名" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">搜索一下</span>
+            </div>
+            <!-- <ul></ul> -->
+        </div>
+    </div>
+    <!-- 18121212121 -->
+    <main>
+        <div class="main">
+            <div class="quan">
+                <h4>全部分类</h4>
+                <ul>
+                    <li>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-meishi"></use>
+                        </svg>
+                        <span>美食</span>
+
+                        <ul>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">美食</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">代金券</a>
+                                            <a href="">甜点饮品</a>
+                                            <a href="">火锅</a>
+                                            <a href="">自助餐</a>
+                                            <a href="">小吃快餐</a>
+                                            <a href="">日韩料理</a>
+                                            <a href="">西餐</a>
+                                            <a href="">聚餐宴请</a>
+                                            <a href="">烧烤烤肉</a>
+                                            <a href="">东北菜</a>
+                                            <a href="">川湘菜</a>
+                                            <a href="">江浙菜</a>
+                                            <a href="">香锅烤鱼</a>
+                                            <a href="">粤港菜</a>
+                                            <a href="">中式烧烤/烤串</a>
+                                            <a href="">西北菜</a>
+                                            <a href="">咖啡酒吧茶馆</a>
+                                            <a href="">云贵菜</a>
+                                            <a href="">东南亚菜</a>
+                                            <a href="">海鲜</a>
+                                            <a href="">素食</a>
+                                            <a href="">台湾/客家菜</a>
+                                            <a href="">创意菜</a>
+                                            <a href="">汤/粥/炖菜</a>
+                                            <a href="">蒙餐</a>
+                                            <a href="">新疆菜</a>
+                                            <a href="">其他美食</a>
+                                            <a href="">京菜鲁菜</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <svg class="icon i2" aria-hidden="true">
+                            <use xlink:href="#icon-waimai"></use>
+                        </svg>
+                        <span>外卖</span>
+
+                        <ul>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">外卖</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">美团外卖</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <svg class="icon i3" aria-hidden="true">
+                            <use xlink:href="#icon-jiudian"></use>
+                        </svg> <span>酒店</span>
+                        <ul>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">酒店</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">经济型</a>
+                                            <a href="">舒适/三星</a>
+                                            <a href="">高档/四星</a>
+                                            <a href="">豪华/五星</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <svg class="icon i2" aria-hidden="true">
+                            <use xlink:href="#icon-minsu"></use>
+                        </svg> <span>民宿</span>
+                        <ul>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">热门城市</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">上海</a>
+                                            <a href="">成都</a>
+                                            <a href="">北京</a>
+                                            <a href="">重庆</a>
+                                            <a href="">南京</a>
+                                            <a href="">杭州</a>
+                                            <a href="">广州</a>
+                                            <a href="">西安</a>
+                                            <a href="">武汉</a>
+                                            <a href="">厦门</a>
+                                            <a href="">长沙</a>
+                                            <a href="">青岛</a>
+                                            <a href="">深圳</a>
+                                            <a href="">天津</a>
+                                            <a href="">苏州</a>
+                                </div>
+                            </li>
+
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">热门房源</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">复式Loft</a>
+                                            <a href="">别墅</a>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-maoyandianying"></use>
+                        </svg>
+                        <span>猫眼电影</span>
+
+                        <ul>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">热映电影</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">唐人街探案3</a>
+                                            <a href="">你好，李焕英</a>
+                                            <a href="">熊出没·狂野大陆</a>
+                                            <a href="">送你一朵小红花</a>
+                                            <a href="">温暖的抱抱</a>
+                                            <a href="">许愿神龙</a>
+                                            <a href="">大红包</a>
+                                            <a href="">拆弹专家2</a>
+                                            <a href="">刺杀小说家</a>
+                                            <a href="">侍神令</a>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-jipiaohuochepiao"></use>
+                        </svg>
+                        <span>机票 / 火车票</span>
+                        <ul>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">机票</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">国内机票</a>
+                                            <a href="">国际/港澳台机票</a>
+                                </div>
+                            </li>
+
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">火车票</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">火车票</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <svg class="icon i5" aria-hidden="true">
+                            <use xlink:href="#icon-ktv"></use>
+                        </svg> <span>休闲娱乐 / KTV</span>
+
+                        <ul>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">休闲娱乐</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">足疗按摩</a>
+                                            <a href="">洗浴/汗蒸</a>
+                                            <a href="">酒吧</a>
+                                            <a href="">密室逃脱</a>
+                                            <a href="">轰趴馆</a>
+                                            <a href="">茶馆</a>
+                                            <a href="">私人影院</a>
+                                            <a href="">DIY手工坊</a>
+                                            <a href="">采摘/农家乐</a>
+                                            <a href="">网吧网咖</a>
+                                            <a href="">游乐游艺</a>
+                                            <a href="">VR</a>
+                                            <a href="">桌面游戏</a>
+                                            <a href="">真人CS</a>
+                                            <a href="">棋牌室</a>
+                                            <a href="">其他玩乐</a>
+                                </div>
+                            </li>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">KTV</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">KTV</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <svg class="icon i5" aria-hidden="true">
+                            <use xlink:href="#icon-shenghuofuwu-01
+                        "></use>
+                        </svg> <span>生活服务</span>
+                        <ul>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">生活服务</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">衣物/皮具洗护</a>
+                                            <a href="">家政</a>
+                                            <a href="">搬家运输</a>
+                                            <a href="">送水</a>
+                                            <a href="">充值缴费</a>
+                                            <a href="">服饰/鞋包养护</a>
+                                            <a href="">开锁换锁</a>
+                                            <a href="">居家维修</a>
+                                            <a href="">管道疏通</a>
+                                            <a href="">家电维修清洗</a>
+                                            <a href="">电脑维修</a>
+                                            <a href="">手机维修</a>
+                                            <a href="">证件照/肖像摄影</a>
+                                            <a href="">照片冲印/图文文印</a>
+                                            <a href="">商务服务/法律服务</a>
+                                            <a href="">文化传媒机构</a>
+                                            <a href="">成人用品/情趣用品</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <svg class="icon i6" aria-hidden="true">
+                            <use xlink:href="#icon-liren"></use>
+                        </svg> <span>丽人 / 美发 / 医学美容</span>
+                        <ul>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">丽人</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">美发</a>
+                                            <a href="">美甲美睫</a>
+                                            <a href="">美容美体</a>
+                                            <a href="">医学美容</a>
+                                            <a href="">瑜伽舞蹈</a>
+                                            <a href="">瘦身纤体</a>
+                                            <a href="">韩式定妆</a>
+                                            <a href="">祛痘</a>
+                                            <a href="">纹身</a>
+                                            <a href="">化妆品</a>
+                                            <a href="">养发</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <svg class="icon i6" aria-hidden="true">
+                            <use xlink:href="#icon-jiehun"></use>
+                        </svg> <span>结婚 / 婚纱摄影 / 婚宴</span>
+                        <ul>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">结婚</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">婚纱摄影</a>
+                                            <a href="">旅拍</a>
+                                            <a href="">个性写真</a>
+                                            <a href="">婚宴</a>
+                                            <a href="">婚庆公司</a>
+                                            <a href="">婚纱礼服</a>
+                                            <a href="">西服定制</a>
+                                            <a href="">婚戒首饰</a>
+                                            <a href="">婚车租赁</a>
+                                            <a href="">司仪主持</a>
+                                            <a href="">彩妆造型</a>
+                                            <a href="">婚礼跟拍</a>
+                                            <a href="">婚礼小礼品</a>
+                                            <a href="">更多婚礼服务</a>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <li>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-qinziyou
+                        "></use>
+                        </svg> <span>亲子 / 儿童乐园 / 幼教</span>
+
+
+
+                        <ul>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">儿童乐园</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">婴儿游泳</a>
+                                            <a href="">其它亲子游乐</a>
+                                            <a href="">酒吧</a>
+                                            <a href="">密室逃脱</a>
+                                            <a href="">轰趴馆</a>
+                                            <a href="">茶馆</a>
+
+                                </div>
+                            </li>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">幼儿教育</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">早教中心</a>
+                                            <a href="">少儿英语</a>
+                                            <a href="">智力开发</a>
+                                            <a href="">托班/幼儿园</a>
+                                            <a href="">幼儿教育</a>
+                                            <a href="">其他幼儿教育</a>
+                                </div>
+                            </li>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">亲子摄影</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">儿童摄影</a>
+                                            <a href="">孕妇写真</a>
+                                            <a href="">上门拍</a>
+                                            <a href="">其他亲子摄影</a>
+
+                                </div>
+                            </li>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">孕产护理</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">月子会所</a>
+                                            <a href="">产后恢复</a>
+                                            <a href="">妇幼医院</a>
+                                            <a href="">孕产用品</a>
+                                            <a href=""> 开奶催乳</a>
+                                            <a href="">月嫂</a>
+                                            <a href="">亲子购物</a>
+                                            <a href="">宝宝派对</a>
+                                            <a href="">亲子服务</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li>
+                        <svg class="icon i5" aria-hidden="true">
+                            <use xlink:href="#icon-yundongjianshen"></use>
+                        </svg> <span>运动健身 / 健身中心</span>
+                        <ul>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">运动健身</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">健身中心</a>
+                                            <a href="">武术场馆</a>
+                                            <a href="">游泳馆</a>
+                                            <a href="">羽毛球馆</a>
+                                            <a href="">溜冰场</a>
+                                            <a href="">射箭馆</a>
+                                            <a href="">篮球场</a>
+                                            <a href="">网球馆</a>
+                                            <a href="">台球馆</a>
+                                            <a href="">乒乓球</a>
+                                            <a href="">足球场</a>
+                                            <a href="">高尔夫场</a>
+                                            <a href="">保龄球馆</a>
+                                            <a href="">体育场馆</a>
+                                            <a href="">马术场</a>
+                                            <a href="">壁球馆</a>
+                                            <a href="">更多运动</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <svg class="icon i5" aria-hidden="true">
+                            <use xlink:href="#icon-jiazhuang
+                        "></use>
+                        </svg> <span>家装 / 建材 / 家居</span>
+                        <ul>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">装修设计</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">半包装修</a>
+                                            <a href="">全包装修</a>
+                                            <a href="">清包装修</a>
+                                </div>
+                            </li>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">装修建材</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">地板</a>
+                                            <a href="">瓷砖石材</a>
+                                            <a href="">橱柜</a>
+                                            <a href="">灯饰照明</a>
+                                            <a href="">厨卫洁具</a>
+                                            <a href="">油漆涂料</a>
+                                            <a href="">集成吊顶</a>
+                                            <a href="">墙纸墙艺</a>
+                                            <a href="">门窗</a>
+                                            <a href="">木材板材</a>
+                                            <a href="">家用五金</a>
+                                            <a href="">电工电料</a>
+                                            <a href="">楼梯</a>
+                                            <a href="">管材管件</a>
+                                </div>
+                            </li>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">家具家居</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">家具</a>
+                                            <a href="">床上用品/家纺</a>
+                                            <a href="">家居饰品</a>
+                                            <a href="">厨具餐具</a>
+                                            <a href="">智能家居</a>
+                                </div>
+                            </li>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">家装卖场</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">建材卖场</a>
+                                            <a href="">家居卖场</a>
+                                            <a href="">灯饰卖场</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <svg class="icon i5" aria-hidden="true">
+                            <use xlink:href="#icon-chengji--"></use>
+                        </svg> <span>学习培训 / 音乐培训</span>
+                        <ul>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">音乐培训</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">钢琴</a>
+                                            <a href="">吉他</a>
+                                            <a href="">小提琴</a>
+                                            <a href="">古筝</a>
+                                            <a href="">架子鼓</a>
+                                            <a href="">声乐</a>
+                                            <a href="">其他音乐培训</a>
+
+                                </div>
+                            </li>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">职业技术</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">美容化妆</a>
+                                            <a href="">会计</a>
+                                            <a href="">IT</a>
+                                            <a href="">厨艺</a>
+                                            <a href="">管理培训</a>
+                                            <a href="">摄影培训</a>
+                                            <a href="">司法考试</a>
+                                            <a href="">公务员培训</a>
+                                            <a href="">其他职业培训</a>
+                                </div>
+                            </li>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">外语培训</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">英语</a>
+                                            <a href="">日语</a>
+                                            <a href="">韩语</a>
+                                            <a href="">法语</a>
+                                            <a href="">德语</a>
+                                            <a href="">汉语</a>
+                                            <a href="">俄语</a>
+                                            <a href="">西班牙语</a>
+                                            <a href="">其他外语</a>
+                                </div>
+                            </li>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">美术培训</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">绘画</a>
+                                            <a href="">书法</a>
+                                            <a href="">其他美术</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <svg class="icon i5" aria-hidden="true">
+                            <use xlink:href="#icon-yiliaojiankang"></use>
+                        </svg> <span>医疗健康 / 宠物 / 爱车</span>
+                        <ul>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">医疗健康</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">医院</a>
+                                            <a href="">齿科口腔</a>
+                                            <a href="">体检中心</a>
+                                            <a href="">药店</a>
+                                            <a href="">中医</a>
+                                            <a href="">其他健康服务</a>
+                                </div>
+                            </li>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">爱车</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">洗车</a>
+                                            <a href="">租车</a>
+                                            <a href="">加油站</a>
+                                            <a href="">维修保养</a>
+                                            <a href="">汽车美容</a>
+                                            <a href="">陪练</a>
+                                            <a href="">汽车用品</a>
+                                            <a href="">停车场</a>
+                                            <a href="">汽车保险</a>
+                                            <a href="">4S店/汽车销售</a>
+                                            <a href="">更多汽车服务</a>
+                                            <a href="">机油保养</a>
+                                            <a href="">汽车报价</a>
+                                            <a href="">二手车</a>
+                                            <a href="">广告驾校</a>
+                                            <a href="">交警队</a>
+                                            <a href="">汽车改装</a>
+                                            <a href="">汽车配件</a>
+                                </div>
+                            </li>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">宠物</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">宠物店</a>
+                                            <a href="">宠物医院</a>
+                                            <a href="">体检中心</a>
+                                            <a href="">药店</a>
+                                            <a href="">中医</a>
+                                            <a href="">其他健康服务</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <svg class="icon i6" aria-hidden="true">
+                            <use xlink:href="#icon-jiuba"></use>
+                        </svg>
+                        <span>酒吧 / 密室逃脱</span>
+                        <ul>
+                            <li class="ls">
+                                <div class="d1">
+                                    <a href="" class="a3">玩乐</a>
+                                    <a href="" class="a1">更多<</a> </div> <div class="d2">
+                                            <a href="">KTV</a>
+                                            <a href="">酒吧</a>
+                                            <a href="">密室逃脱</a>
+                                            <a href="">游乐游艺</a>
+                                            <a href="">网吧网咖</a>
+                                            <a href="">私人影院</a>
+                                            <a href="">DIY手工坊</a>
+                                            <a href="">桌面游戏</a>
+                                            <a href="">采摘/农家乐</a>
+                                            <a href="">棋牌室</a>
+                                            <a href="">轰趴馆</a>
+                                            <a href="">真人CS</a>
+                                            <a href="">VR</a>
+                                            <a href="">其他玩乐</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </div>
+            <ul class="nav">
+                <li><a href="">美团外卖</a></li>
+                <li><a href="">猫眼电影</a></li>
+                <li><a href="">美团酒店</a></li>
+                <li><a href="">民宿／公寓</a></li>
+                <li><a href="">商家入驻</a></li>
+                <li><a href="">美团公益</a></li>
+            </ul>
+
+            <div class="lun">
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="https://hotel.meituan.com/anshan/"><img src="../img/4.jpg"></a>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://as.meituan.com/meishi/"><img src="../img/2.jpg" alt=""></a>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://waimai.meituan.com/"><img src="../img/1.jpg" alt=""></a>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://maoyan.com/"><img src="../img/3.jpg" alt=""></a>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://paidui.meituan.com/?"><img src="../img/5.png" alt=""></a>
+
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <!-- 分页器 -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+            </div>
+            <div class="a11">
+                <a href="https://as.meituan.com/xiuxianyule/">
+                    <img src="../img/6.jpg" alt=""></a>
+            </div>
+
+            <div class="a22">
+                <a href=""><img src="../img/1-6.png" alt=""></a>
+                <div class="p1">
+                    <!-- <a href=""><img src="../img/12.png" alt="">
+                        <p>18121212121</p>
+                    </a>   .main .a2 .p1-->
+
+                </div>
+                <div class="p3">
+                    <a href="">
+                        <img src="../img/1-1.png" alt="">
+                        <p>我的订单</p>
+                    </a>
+                    <a href="" class="c1">
+                        <img src="../img/1-2.png" alt="">
+                        <p>我的收藏</p>
+                    </a>
+                    <a href="" class="c2">
+                        <img src="../img/1-3.png" alt="">
+                        <p>抵用券</p>
+                    </a>
+                    <a href="" class="c3">
+                        <img src="../img/1-4.png" alt="">
+                        <p>余额</p>
+                    </a>
+                    <a href="" class="p5">
+                        <img src="../img/1-5.png" alt="">
+                        <p>更多</p>
+                    </a>
+                </div>
+            </div>
+            <div class="a33">
+                <a href="" class="g1">
+                    <img src="../img/7.png" alt="">
+                </a>
+                <a href="" class="g2">
+                    <img src="../img/8.jpg" alt="">
+                </a>
+                <a href="" class="g3">
+                    <img src="../img/9.jpg" alt="">
+                </a>
+                <div class="g5">
+                    <img src="../img/13.png" alt="">
+                    <p>美团APP手机版</p>
+                    <div>1元起吃喝玩乐</div>
+                </div>
+            </div>
+            <!-- <div></div> -->
+            <div class="dianYing">
+                <div class="lj">
+                    <a href="" class="a1">猫眼电影</a>
+                    <a href="" class="a2">正在热映</a>
+                    <a href="" class="a3">即将上映</a>
+                    <a href="" class="a4">全部></a>
+                </div>
+                <!-- $('.main dianYing .lj .a2') -->
+                <div class="dian">
+
+                    <!-- <div class="swiper-container gallery-dianTop">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href=""><img src="../img/4.jpg"></a>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""><img src="../img/2.jpg" alt=""></a>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""><img src="../img/1.jpg" alt=""></a>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""><img src="../img/3.jpg" alt=""></a>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""><img src="../img/5.png" alt=""></a>
+
+                        </div>
+                      </div> -->
+                    <!-- Add Arrows -->
+                    <!-- 分页器 -->
+                    <!-- <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>  -->
+
+                </div>
+            </div>
+            <div class="zhuShu">
+                <div class="zhu">
+                    <a href="" class="a1">推荐民宿</a>
+                    <a href="" class="a2"><i>沈阳</i>
+                        <div class="san"></div>
+                    </a>
+                    <a href="" class="a3"><i>大连</i>
+                        <div></div>
+                    </a>
+                    <a href="" class="a4"><i>长春</i>
+                        <div></div>
+                    </a>
+                    <a href="" class="a5"><i>秦皇岛</i>
+                        <div></div>
+                    </a>
+                    <a href="" class="a6"><i>烟台</i>
+                        <div></div>
+                    </a>
+                    <a href="" class="a7"><i>威海</i>
+                        <div></div>
+                    </a>
+                    <a href="" class="a8"><i>唐山</i>
+                        <div></div>
+                    </a>
+                    <a href="" class="a9"><i>承德</i>
+                        <div></div>
+                    </a>
+                    <a href="" class="a10"><i>锦州</i>
+                        <div></div>
+                    </a>
+                    <a href="" class="a13"><i>吉林</i>
+                        <div></div>
+                    </a>
+
+                    <a href="" class="a12">全部></a>
+
+                </div>
+              
+                <div class="shu">
+                    <!-- <div class="b">
+ <a href="">
+
+                                    <img src="https://img.meituan.net/phoenix/096da7bf09a3fa8157aff07cb903899d3142475.jpg"
+                                        alt="">
+                            <p>罗马假日商旅轻奢静雅舒适大床房，近国瑞城瑞公馆，东站，骨科医院，八家子地利生鲜批发市场，28中学，中街，龙之梦，商圈。</p>
+                            <span>整套1居室·可住2人 | 沈阳东站</span>
+<div>￥98</div>
+                            </a>
+
+                            </ul>
+                        </div> -->
+                </div>
+            </div>
+            <div class="meiShi">
+
+                <div class="mei">
+                    <a href="" class="m1">猜你喜欢</a>
+                    <a href="" class="m2">为你甄选最适合的<div></div>
+                    </a>
+                </div>
+                <div class="shi">
+                    <!-- <a href="">
+                        <img src="https://p0.meituan.net/bbia/b60207046e6665b989b4797f3ffc7c2d175758.jpg@267w_150h_1e_1c"
+                            alt="">
+                        <div>
+                            <p>三宝烧烤（九中店）</p>
+                            <span><i>5</i>颗星</span>
+                            <span>1639个评价</span>
+                            <div class="yu">园林路/绿化街</div>
+                            <div class="qi">￥<i>90.0</i>起</div>
+
+                        </div>
+                    </a> -->
+
+                </div>
+            </div>
+            <div class="City">
+            <div class="dao">美团导航</div>
+            <div class="reMen">
+<span>热门城市</span>
+<ul>  
+    <li><a href="">重庆</a></li>
+    <li><a href="">贵阳</a></li>
+    <li><a href="">东莞</a></li>
+    <li><a href="">南京</a></li>
+    <li><a href="">广州</a></li>
+    <li><a href="">青岛</a></li>
+    <li><a href="">大连</a></li>
+    <li><a href="">温州</a></li>
+    <li><a href="">无锡</a></li>
+    <li><a href="">苏州</a></li>
+    <li><a href="">常州</a></li>
+    <li><a href="">杭州</a></li>
+    <li><a href="">成都</a></li>
+    <li><a href="">深圳</a></li>
+    <li><a href="">沈阳</a></li>
+    <li><a href="">昆明</a></li>
+    <li><a href="">长沙</a></li>
+    <li><a href="">济南</a></li>
+    <li><a href="">合肥</a></li>
+    <li><a href="">佛山</a></li>
+</ul>
+            </div>
+            <div class="reMen">
+                <span>热门分类</span>
+                <ul>          
+                    <li><a href="">酒店<i>HOT</i></a></li>
+                    <li><a href="">美食</a></li>
+                    <li><a href="">休闲娱乐</a></li>
+                    <li><a href="">运动健身</a></li>
+                    <li><a href="">生活服务</a></li>
+                    <li><a href="">上门服务</a></li>
+                    <li><a href="">购物</a></li>
+                    <li><a href="">时尚购</a></li>
+                    <li><a href="">本地购物</a></li>
+                    <li><a href="">结婚</a></li>
+                    <li><a href="">摄影写真</a></li>
+                    <li><a href="">宴会</a></li>
+                    <li><a href="">丽人</a></li>
+                    <li><a href="">母婴亲子</a></li>
+                    <li><a href="">学习培训</a></li>
+                    <li><a href="">家装</a></li>
+                    <li><a href="">汽车服务</a></li>
+                    <li><a href="">医疗</a></li>
+                    <li><a href="">宠物</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+            <div class="reMen">
+                <span>周边热门</span>
+                <ul>     
+                    <li><a href="">辽阳酒店</a></li>
+                    <li><a href="">辽阳美食</a></li>
+                    <li><a href="">海城休闲娱乐</a></li>
+                    <li><a href="">海城运动健身</a></li>
+                    <li><a href="">海城生活服务</a></li>
+                    <li><a href="">灵山上门服务</a></li>
+                    <li><a href="">灵山购物</a></li>
+                    <li><a href="">海城时尚购</a></li>
+                    <li><a href="">辽阳本地购物</a></li>
+                    <li><a href="">海城结婚</a></li>
+                    <li><a href="">灵山摄影写真</a></li>
+                    <li><a href="">海城宴会</a></li>
+                    <li><a href="">辽阳丽人</a></li>
+                    <li><a href="">海城母婴亲子</a></li>
+                    <li><a href="">辽阳学习培训</a></li>
+                    <li><a href="">海城家装</a></li>
+                    <li><a href="">辽阳汽车服务</a></li>
+                    <li><a href="">灵山医疗</a></li>
+                    <li><a href="">海城宠物</a></li>
+                </ul>
+            </div>
+            </div>
+    </main>
+    <div id="footer">
+        <div class="footer">
+            <div class="foot1">
+                <span>用户帮助</span>
+                <ul>
+                    <li><a href="">申请退款</a></li>
+                    <li><a href="">常见问题</a></li>
+                    <li><a href="">用户协议</a></li>
+                    <li><a href="">隐私政策</a></li>
+                    <li><a href="">反诈骗公告</a></li>
+                    <li><a href="">消费者权益保障</a></li>
+                </ul>
+            </div>
+            <div class="foot2">
+                <span>美团服务</span>
+                <ul>
+                    <li><a href="">美团外卖</a></li>
+                    <li><a href="">美团酒店</a></li>
+                    <li><a href="">猫眼电影</a></li>
+                    <li><a href="">美团配送</a></li>
+                    <li><a href="">美团云</a></li>
+                    <li><a href="">大众点评</a></li>
+                    <li><a href="">美团民宿</a></li>
+                    <li><a href="">无人配送</a></li>
+                </ul>
+            </div>
+            <div>
+                <span>商家合作</span>
+                <ul>
+                    <li><a href="">美团餐饮商户中心</a></li>
+                    <li><a href="">美食商家入驻(非外卖)</a></li>
+                    <li><a href="">美团外卖开店申请</a></li>
+                    <li><a href="">美团收银官网</a></li>
+                    <li><a href="">美团配送合作申请</a></li>
+                    <li><a href="">美团餐饮学院</a></li>
+                    <li><a href="">酒店商家入驻</a></li>
+                    <li><a href="">境内度假商家入驻</a></li>
+                    <li><a href="">综合商家入驻</a></li>
+                    <li><a href="">美团民宿房东商家入驻</a></li>
+                    <li><a href="">商家开票申请</a></li>
+                    <li><a href="">美团智能收银机</a></li>
+                    <li><a href="">美团餐饮开放平台</a></li>
+                    <li><a href="">美团收单</a></li>
+                    <li><a href="">免费使用美团排队</a></li>
+                    <li><a href="">快驴进货商家合作</a></li>
+                    <li><a href="">美团闪购商家入驻</a></li>
+                </ul>
+            </div>
+            <div>
+                <span>合作商招募</span>
+                <ul>
+                    <li><a href="">美团外卖合作商招募</a></li>
+                    <li><a href="">到店餐饮合作商招募</a></li>
+                    <li><a href="">到店综合业务合作商招募</a></li>
+                    <li><a href="">美团民宿房东商家入驻</a></li>
+                    <li><a href="">美团联盟</a></li>
+                    <li><a href="">美团收银招募线上分销商</a></li>
+                    <li><a href="">美团5S服务商招募</a></li>
+                    <li><a href="">美团收单合作商招募</a></li>
+                    <li><a href="">美团充电宝合作商招募</a></li>
+                </ul>
+            </div>
+            <div class="foot5">
+                <span>美团规则</span>
+                <ul>
+                    <li><a href="">规则中心</a></li>
+                    <li><a href="">规则目录</a></li>
+                    <li><a href="">规则评议院</a></li>
+                </ul>
+            </div>
+            <div class="foot6">
+                <span>关注美团</span>
+                <ul>
+                    <li><a href="">美团新浪微博</a></li>
+                </ul>
+            </div>
+            <div>
+                <span>公司信息</span>
+                <ul>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">投资者关系</a></li>
+                    <li><a href="">加入我们</a></li>
+                    <li><a href="">商户诚信公约及管理办法</a></li>
+                    <li><a href="">保险经纪资质</a></li>
+                </ul>
+            </div>
+            <div>
+                <span>廉正举报</span>
+                <ul>
+                    <li><a href="">廉正举报平台</a></li>
+                </ul>
+            </div>
+            <div class="foot9">
+                <span>知识产权</span>
+                <ul>
+                    <li><a href="">知识产权维权平台</a></li>
+                </ul>
+            </div>
+            <div>
+                <span>消费者服务热线
+                    <ul>
+                        <li><a href="">外卖消费者：10109777</a></li>
+                        <li><a href="">猫眼消费者：10105335</a></li>
+                        <li><a href="">其他消费者：10107888</a></li>
+                    </ul>
+            </div>
+            <div class="foot11">
+                <span>商家服务热线</span>
+                <ul>
+                    <li><a href="">外卖&餐饮商家：10105557</a></li>
+                    <li><a href="">休闲娱乐、丽人、ktv、教育、结婚、亲子、家装等商家：10100107</a></li>
+                </ul>
+            </div>
+            <div class="foot12">
+                <span>投诉举报专区</span>
+                <ul>
+                    <li><a href="">违法和不良信息举报电话：4006018900</a></li>
+                    <li><a href="">举报邮箱：tousujubao@meituan.com</a></li>
+                    <li><a href="">网上有害信息举报</a></li>
+                </ul>
+            </div>
+            <li class="foot13"><a href="">商家自助入驻美团入口</a></li>
+            <li class="foot14"><a href="">供应商注册入口</a></li>
+        </div>
+    </div>
+
+    <script language="javascript">
+        var mySwiper = new Swiper('.gallery-top', {
+
+            // 前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            //显示索引为0的这个元素
+            initialSlide: 0,
+            //自动切换
+            // autoplay: true, 
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            },
+            // 循环模式选项
+            loop: true,
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+
+                type: 'bullets',
+                // ‘bullets’  圆点（默认）
+                // type:"fraction", 1/5 分式 
+                // ‘progressbar’  进度条
+                // ‘custom’ 自定义
+            },
+        });
+
+
+        //鼠标移出隐藏按钮，移入显示按钮
+        mySwiper.el.onmouseover = function () {
+            mySwiper.navigation.$nextEl.removeClass('hide');
+            mySwiper.navigation.$prevEl.removeClass('hide');
+        }
+        mySwiper.el.onmouseout = function () {
+            mySwiper.navigation.$nextEl.addClass('hide');
+            mySwiper.navigation.$prevEl.addClass('hide');
+        }
+
+        //鼠标滑过pagination控制swiper切换
+        for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
+            mySwiper.pagination.bullets[i].index = i
+            mySwiper.pagination.bullets[i].onmouseover = function () {
+                mySwiper.slideTo(this.index);
+            };
+        }
+        //如果你开启了clickable，还可以这样  
+        for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
+            mySwiper.pagination.bullets[i].onmouseover = function () {
+                this.click();
+            };
+        }
+        //鼠标覆盖停止自动切换
+        mySwiper.el.onmouseover = function () {
+            mySwiper.autoplay.stop();
+        }
+
+        //鼠标离开开始自动切换
+        mySwiper.el.onmouseout = function () {
+            mySwiper.autoplay.start();
+        }
+    </script>
+
+
+    <script>
+        let dian = $('.main .dianYing .dian');
+        let p1 = $('.main .a22 .p1');
+        let cookie = getCookie('login');
+        console.log(cookie);
+        if (!cookie) {
+            alert('没有登录请到登录页面进行登录');
+            let i = localStorage.setItem('url', location.href); //http://localhost/tuan.io/html/tuan.html?acronym=as
+            location.href = './login.html';
+            // return
+        }
+        let reg = /acronym=([a-z]+)/;
+        if (!reg.test(location.search)) {
+            location.href = './mei.html';
+        }
+        let acronym = reg.exec(location.search)[1]; //as
+        getdiming();
+
+
+
+
+        async function getdiming() {
+            let data = await pAjax({
+                url: '../json/diming.json'
+            });
+            data = JSON.parse(data);
+
+            headerRand($(data));
+        }
+
+        function headerRand(data) {
+            let str = '';
+            let head = $(".header");
+
+            data.each((index, item) => {
+                let item1 = $(item.cityInfoList);
+                item1.each((idx, item2) => {
+
+                    if (item2.acronym == acronym) {
+                        str = `<div class="nav1">
+                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                <span class="a2">${item2.name}</span>
+                <span class="a3">[<a href="">佛山</a><a href="">顺德</a><a href="">南沙 </a> ]</span>
+                <a href="./login.html" class="li">立即登录</a>
+                <span class="a6"> <a href="./zhuce.html" class="ce">注册</a></span>
+
+            </div>
+
+            <ul class="nav2">
+                <li class="a5"><a href="">我的美团</a>
+                    <ul>
+                        <li><a href="">我的订单</a></li>
+                        <li><a href="">我的收藏</a></li>
+                        <li><a href="">抵用券</a></li>
+                        <li><a href="">账户设置</a></li>
+                    </ul>
+                </li>
+                <li class="a5"><a href="">手机APP</a></li>
+                <li class="a5"><span>商家中心</span>
+                    <ul>
+                        <li><a href="">美团餐饮商户中心</a></li>
+                        <li><a href="">登录商家中心</a></li>
+                        <li><a href="">美团智能收银</a></li>
+                        <li><a href="">我想合作</a></li>
+                        <li><a href="">手机免费开店</a></li>
+                        <li><a href="">餐饮代理商招募</a></li>
+                        <li><a href="">商家申请开票</a></li>
+                        <li><a href="">免费合作美团排队</a></li>
+                    </ul>
+                </li>
+                <li class="a5"><span>美团规则</span>
+                    <ul>
+                        <li><a href="">规则中心</a></li>
+                        <li><a href="">规则目录</a></li>
+                        <li><a href="">规则评议院</a></li>
+                    </ul>
+                </li>
+                <li class="a5"><span>网站导航</span>
+                    <ul>
+                        <li><a href="">酒店旅游</a></li>
+                        <li><a href="">吃美食</a></li>
+                        <li><a href="">看电影</a></li>
+                        <li><a href="">手机应用</a></li>
+                    </ul>
+                </li>
+            </ul>`
+                        head.append(str);
+                    }
+
+                    // 
+                })
+            })
+        }
+
+        let input1 = document.querySelector('.form-control')
+        let input = $('.form-control');
+        let sea = $('.input-group-addon');
+        // 搜索框内容发生改变并失去焦点时触发事件
+        input1.oninput = function () {
+            if (input.val()) {
+                let xhr = new XMLHttpRequest();
+                xhr.open('get',
+                    `/hua?keyword=${input.val()}`
+                );
+                xhr.send();
+                xhr.onload = function () {
+                    let res = JSON.parse(xhr.responseText);
+                    search(res.data.suggestItems);
+                    liBtn();
+
+                }
+            }
+            // 当搜索框的内容为空的时候，让ul隐藏
+            if (!(input.val())) {
+                $('.search ul').css('display', 'none');
+            } else {
+                // 当搜索框的内容存在时。并点击html时隐藏ul
+                $('html').click(function () {
+                    $('.search ul').css('display', 'none');
+                });
+            }
+        }
+        // 渲染个人头像及登录的账号
+        str = `<a href=""><img src="../img/12.png" alt="">
+                        <p>${cookie}</p>
+                    </a>`
+        p1.html(str);
+
+
+        str1 = `<div class="swiper-container gallery-dianTop">
+                    <div class="swiper-wrapper">
+                      </div> 
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>`;
+        dian.html(str1);
+
+        var mySwiper = new Swiper('.gallery-dianTop', {
+            slidesPerView: 5,
+            slidesPerGroup: 5,
+
+        });
+
+
+
+        let dian1 = $('.main .dianYing .lj .a2');
+        let dian2 = $('.main .dianYing .lj .a3')
+        let nex = $('.main .dianYing .dian .swiper-button-next');
+        let pre = $('.main .dianYing .dian .swiper-button-prev');
+        let swi = $('.gallery-dianTop .swiper-wrapper');
+
+        // 点击<>让轮播图的位移移动476px
+
+
+        $.ajax({
+            url: '../json/asdianying.json',
+            type: 'get',
+            success: function (res) {
+                // console.log($(res.data.hot));
+                let num = 0;
+                diany($(res.data.hot), num);
+                nex.click(function () {
+                    swi.css({
+                        transitionDuration: '1000ms',
+                        transform: 'translate3d(-476px, 0px, 0px)'
+                    })
+                });
+                pre.click(function () {
+                    swi.css({
+                        transitionDuration: '1000ms',
+                        transform: 'translate3d(0px, 0px, 0px)'
+                    })
+                })
+            }
+        });
+        dian1.hover(function () {
+            $.ajax({
+                url: '../json/asdianying.json',
+                type: 'get',
+                success: function (res) {
+                    // console.log($(res.data.hot));
+                    let num = 0;
+                    diany($(res.data.hot), num);
+                    nex.click(function () {
+                        swi.css({
+                            transitionDuration: '1000ms',
+                            transform: 'translate3d(-476px, 0px, 0px)'
+                        })
+                    });
+                    pre.click(function () {
+                        swi.css({
+                            transitionDuration: '1000ms',
+                            transform: 'translate3d(0px, 0px, 0px)'
+                        })
+                    })
+                }
+            });
+        });
+        dian2.hover(function () {
+            let str3 = '';
+            $.ajax({
+                url: '../json/asdianying1.json',
+                type: 'get',
+                success: function (res) {
+                    let num = 9;
+                    console.log(res);
+                    diany1($(res.data.coming), num);
+                    nex.click(function () {
+                        swi.css({
+
+                            transitionDuration: '1000ms',
+                            transform: 'translate3d(-1176px, 0px, 0px)'
+                        })
+                    });
+                    pre.click(function () {
+                        swi.css({
+                            transitionDuration: '1000ms',
+                            transform: 'translate3d(0px, 0px, 0px)'
+                        })
+                    })
+                }
+            })
+            swi.html(str3);
+        });
+
+        let shu1 = $('.main .zhuShu .zhu .a2');
+        let shu2 = $('.main .zhuShu .zhu .a3');
+        let shu3 = $('.main .zhuShu .zhu .a4');
+        let shu4 = $('.main .zhuShu .zhu .a5');
+        let shu5 = $('.main .zhuShu .zhu .a6');
+        let shu6 = $('.main .zhuShu .zhu .a7');
+        let shu7 = $('.main .zhuShu .zhu .a8');
+        let shu8 = $('.main .zhuShu .zhu .a9');
+        let shu9 = $('.main .zhuShu .zhu .a10');
+        let shu10 = $('.main .zhuShu .zhu .a13');
+        let url = '../json/asfangshu.json';
+
+        let zhu1 = $('.main .zhuShu .zhu a .san');
+
+        zhushu(url, zhu1);
+        shu1.hover(function () {
+
+            let url = '../json/asfangshu.json';
+            zhushu(url, $(this));
+        });
+        shu2.hover(function () {
+            let url = '../json/asfangshu1.json';
+            zhushu(url, $(this));
+        })
+
+        shu3.hover(function () {
+            let url = '../json/asfangshu2.json';
+            zhushu(url, $(this));
+        });
+        shu4.hover(function () {
+            let url = '../json/asfangshu3.json';
+            zhushu(url, $(this));
+        });
+        shu5.hover(function () {
+            let url = '../json/asfangshu4.json';
+            zhushu(url, $(this));
+        });
+        shu6.hover(function () {
+            let url = '../json/asfangshu5.json';
+            zhushu(url, $(this));
+        });
+        shu7.hover(function () {
+            let url = '../json/asfangshu6.json';
+            zhushu(url, $(this));
+        });
+        shu8.hover(function () {
+            let url = '../json/asfangshu7.json';
+            zhushu(url, $(this));
+        });
+        shu9.hover(function () {
+            let url = '../json/asfangshu8.json';
+            zhushu(url, $(this));
+        });
+        shu10.hover(function () {
+            let url = '../json/asfangshu9.json';
+            zhushu(url, $(this));
+        });
+
+
+        $.ajax({
+            url: '../json/asmeishi.json',
+            type: 'get',
+            success: function (res) {
+                meishi($(res))
+            }
+        })
+    </script>
+
+</body>
+
+</html>

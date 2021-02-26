@@ -1,0 +1,285 @@
+[
+    {
+        "itemId": "50824",
+        "title": "三宝烧烤（九中店）",
+        "imgUrl": "http://p0.meituan.net/w.h/bbia/63de2e6497f27e465f56e0a51aa7dee0128826.jpg",
+        "score": "4.7",
+        "consumeNum": null,
+        "areaName": "园林路/绿化街",
+        "lowPrice": "90.0",
+        "saleNum": null,
+        "commentNum": 1639,
+        "detailUrl": "",
+        "firstCate": [
+            1,
+            20632,
+            20426,
+            20557
+        ],
+        "avgPrice": 53
+    },
+    {
+        "itemId": "4910402",
+        "title": "茗馨茶社（老卫校店）",
+        "imgUrl": "https://p0.meituan.net/w.h/merchantpic/f99aa7edac163e4969eebd0f9c6da075245614.jpg",
+        "score": "5.0",
+        "consumeNum": null,
+        "areaName": "园林路/绿化街",
+        "lowPrice": "19.9",
+        "saleNum": null,
+        "commentNum": 3233,
+        "detailUrl": "",
+        "firstCate": [
+            2,
+            3,
+            20632,
+            20873,
+            20426
+        ],
+        "avgPrice": 33
+    },
+    {
+        "itemId": "1217035",
+        "title": "三宝牛排屋",
+        "imgUrl": "http://p0.meituan.net/w.h/bbia/63de2e6497f27e465f56e0a51aa7dee0128826.jpg",
+        "score": "4.6",
+        "consumeNum": null,
+        "areaName": "站前",
+        "lowPrice": "6.0",
+        "saleNum": null,
+        "commentNum": 47523,
+        "detailUrl": "",
+        "firstCate": [
+            1,
+            20632,
+            20426,
+            20557
+        ],
+        "avgPrice": 30
+    },
+    {
+        "itemId": "1217165",
+        "title": "富丽华（解放东路店）",
+        "imgUrl": "http://p1.meituan.net/w.h/joymerchant/-7618638619909845025.jpg",
+        "score": "5.0",
+        "consumeNum": null,
+        "areaName": "解放路",
+        "lowPrice": "47.0",
+        "saleNum": null,
+        "commentNum": 15382,
+        "detailUrl": "",
+        "firstCate": [
+            2,
+            3,
+            20611,
+            20426
+        ],
+        "avgPrice": 69
+    },
+    {
+        "itemId": "4474830",
+        "title": "东泰·黄金北岸温泉洗浴会馆",
+        "imgUrl": "http://p0.meituan.net/w.h/ugcpic/bb30d9c3f6285299a359a73f267a9ba3",
+        "score": "5.0",
+        "consumeNum": null,
+        "areaName": "湖南",
+        "lowPrice": "18.0",
+        "saleNum": null,
+        "commentNum": 10177,
+        "detailUrl": "",
+        "firstCate": [
+            2,
+            3,
+            20611,
+            20426
+        ],
+        "avgPrice": 62
+    },
+    {
+        "itemId": "2028989",
+        "title": "龙继斑鱼庄（铁西三道街店）",
+        "imgUrl": "https://img.meituan.net/w.h/msmerchant/459f53b8dd12187b89f6c903eba226b0136532.jpg",
+        "score": "4.8",
+        "consumeNum": null,
+        "areaName": "千龙户",
+        "lowPrice": "109.0",
+        "saleNum": null,
+        "commentNum": 5429,
+        "detailUrl": "",
+        "firstCate": [
+            1,
+            20632,
+            20426
+        ],
+        "avgPrice": 71
+    },
+    {
+        "itemId": "160336902",
+        "title": "邵汇大虾",
+        "imgUrl": "https://img.meituan.net/w.h/msmerchant/55ee378414499d932ab2aa5eebdc1c61140829.jpg",
+        "score": "4.3",
+        "consumeNum": null,
+        "areaName": "千龙户",
+        "lowPrice": "88.0",
+        "saleNum": null,
+        "commentNum": 1432,
+        "detailUrl": "",
+        "firstCate": [
+            1,
+            20632,
+            20426
+        ],
+        "avgPrice": 50
+    },
+    {
+        "itemId": "164938068",
+        "title": "101比萨（汇园大道店）",
+        "imgUrl": "http://p0.meituan.net/w.h/dealwatera/a349f4e13e7e6a2e5a37808faa06c6df243070.jpg",
+        "score": "4.3",
+        "consumeNum": null,
+        "areaName": "明达",
+        "lowPrice": "47.5",
+        "saleNum": null,
+        "commentNum": 144,
+        "detailUrl": "",
+        "firstCate": [
+            1,
+            20632,
+            20426,
+            20557
+        ],
+        "avgPrice": 50
+    },
+    {
+        "itemId": "4745037",
+        "title": "Ki呦米韩式年糕火锅",
+        "imgUrl": "https://img.meituan.net/w.h/msmerchant/ffb70cd9c8469cc35cde4b804c83b2704308475.jpg",
+        "score": "5.0",
+        "consumeNum": null,
+        "areaName": "站前",
+        "lowPrice": "65.0",
+        "saleNum": null,
+        "commentNum": 42389,
+        "detailUrl": "",
+        "firstCate": [
+            1,
+            20632,
+            20426,
+            20557
+        ],
+        "avgPrice": 34
+    },
+    {
+        "itemId": "92234622",
+        "title": "龙源假日温泉洗浴",
+        "imgUrl": "http://p1.meituan.net/w.h/dpdeal/72f9c1e1d8decdc1deba1c91024fd51076474.jpg",
+        "score": "5.0",
+        "consumeNum": null,
+        "areaName": "",
+        "lowPrice": "25.0",
+        "saleNum": null,
+        "commentNum": 4846,
+        "detailUrl": "",
+        "firstCate": [
+            2,
+            3,
+            20611,
+            20426
+        ],
+        "avgPrice": 29
+    },
+    {
+        "itemId": "81287234",
+        "title": "韩国炸鸡（新玛特店）",
+        "imgUrl": "http://p0.meituan.net/w.h/ugcpic/38427bfd9498e8e685f2ef89cac4dba8",
+        "score": "4.6",
+        "consumeNum": null,
+        "areaName": "站前",
+        "lowPrice": "29.9",
+        "saleNum": null,
+        "commentNum": 521,
+        "detailUrl": "",
+        "firstCate": [
+            1,
+            20426,
+            20557
+        ],
+        "avgPrice": 22
+    },
+    {
+        "itemId": "177805962",
+        "title": "小龙坎火锅（胜利北路店）",
+        "imgUrl": "https://img.meituan.net/w.h/msmerchant/920ce923143fe5a853d45125f376997f5924857.jpg",
+        "score": "4.6",
+        "consumeNum": null,
+        "areaName": "胜利路沿线",
+        "lowPrice": "87.0",
+        "saleNum": null,
+        "commentNum": 1540,
+        "detailUrl": "",
+        "firstCate": [
+            1,
+            20632,
+            20426
+        ],
+        "avgPrice": 87
+    },
+    {
+        "itemId": "1483550",
+        "title": "三宝粥店（站前店）",
+        "imgUrl": "http://p0.meituan.net/w.h/bbia/b60207046e6665b989b4797f3ffc7c2d175758.jpg",
+        "score": "4.8",
+        "consumeNum": null,
+        "areaName": "站前",
+        "lowPrice": "32.0",
+        "saleNum": null,
+        "commentNum": 18766,
+        "detailUrl": "",
+        "firstCate": [
+            1,
+            20426,
+            20557
+        ],
+        "avgPrice": 25
+    },
+    {
+        "itemId": "1559602",
+        "title": "沈阳铁路局千山疗养院",
+        "imgUrl": "https://p1.meituan.net/w.h/merchantpic/eda75ddd5536caf95aff0d42077489f9526802.jpg",
+        "score": "4.7",
+        "consumeNum": null,
+        "areaName": "",
+        "lowPrice": "25.0",
+        "saleNum": null,
+        "commentNum": 3270,
+        "detailUrl": "",
+        "firstCate": [
+            2,
+            20611,
+            20632,
+            20873,
+            20426,
+            20252
+        ],
+        "avgPrice": 25
+    },
+    {
+        "itemId": "2832921",
+        "title": "鲜族大酒店（建国东路总店）",
+        "imgUrl": "http://p1.meituan.net/w.h/dealwatera/c15b9bf45c73050225a3a0c9eee46a27192281.jpg",
+        "score": "4.7",
+        "consumeNum": null,
+        "areaName": "太平",
+        "lowPrice": "42.5",
+        "saleNum": null,
+        "commentNum": 3842,
+        "detailUrl": "",
+        "firstCate": [
+            1,
+            20632,
+            20426,
+            20557
+        ],
+        "avgPrice": 50
+    }
+]

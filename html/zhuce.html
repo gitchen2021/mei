@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美团注册</title>
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../validation/dist/jquery.validate.min.js"></script>
+    <script src="../validation/dist/localization/messages_zh.min.js"></script>
+    <script src="../js/ajax.js"></script>
+   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #header {
+            width: 100%;
+            height: 74px;
+            border-bottom: 3px solid #d8d8d8;
+
+        }
+
+        .header {
+            width: 1000px;
+            height: 74px;
+            margin: auto;
+        }
+
+        .header img {
+            margin-top: 13px;
+            height: 45px;
+        }
+
+        .header div {
+            float: right;
+        }
+
+        .header div span {
+            display: block;
+            float: left;
+            color: #666666;
+            font-size: 15px;
+            margin-top: 32px;
+        }
+
+        .header .deng {
+            display: block;
+            float: right;
+            width: 60px;
+            height: 30px;
+            background-color: #ffcd00;
+            text-align: center;
+            line-height: 30px;
+            color: #222222;
+            margin-top: 22px;
+            border-radius: 3px;
+        }
+
+        #main {
+            width: 100%;
+            height: 400px;
+            border-bottom: 1px solid #d8d8d8;
+
+        }
+
+        .main {
+            width: 1000px;
+            height: 400px;
+            margin: auto;
+        }
+
+        .m {
+            font-size: 12px;
+            color: #999999;
+            margin-left: 5px;
+        }
+
+        .main span {
+            width: 135px;
+            font-size: 17px;
+            color: #333333;
+            /* 让输入框在span后对齐 */
+            display: inline-block;
+            /* 让文字 span在固定宽度中对齐*/
+            text-align: right;
+            margin-right: 8px;
+
+        }
+
+        .main form p:nth-child(1) {
+            margin-top: 50px;
+            margin-bottom: 10px;
+        }
+
+        form .but {
+            margin: 0 0px 10px 148px;
+        }
+
+        form .pass1 {
+            margin: 10px 0;
+        }
+
+        .main input {
+            height: 36px;
+            width: 260px;
+            border: 1px solid#f76120;
+            outline: none;
+        }
+
+        .main form .btn {
+            width: 223px;
+            height: 40px;
+            background-color: #ffc900;
+            margin: 20px 0px 10px 148px;
+            outline: none;
+            border: none;
+        }
+
+        .xie {
+            margin-left: 148px;
+        }
+
+        .xie a {
+            color: #fe8c00;
+        }
+
+        #footer {
+            width: 100%;
+            height: 100px;
+
+
+        }
+
+        .footer {
+            width: 1000px;
+            height: 100px;
+            margin: auto;
+        }
+
+        .footer div {
+            margin-left: 250px;
+            margin-top: 20px;
+        }
+
+        .footer div a {
+            font-size: 11px;
+            color: #999999;
+        }
+
+        .footer div span {
+            color: #999999;
+            font-size: 12px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="header">
+            <a href=""><img src="https://s0.meituan.net/bs/file/?f=fe-sso-fs:build/assets/logo.6a89007.png" alt=""></a>
+            <div>
+                <span class="yi">已有美团账户？</span>
+                <a href="./login.html" class="deng">登录</a>
+            </div>
+
+        </div>
+    </div>
+    <div id="main">
+        <div class="main">
+            <form action="" id="box">
+                <p class="aaa">
+                    <span><label for="">手机号</label></span>
+                    <input type="text" id="tel" name="tel">
+                    <m class="m">注册成功后，全美团通用</m>
+                </p>
+                <p>
+                    <button class="but">免费获取短信动态码</button>
+                </p>
+                <p>
+                    <span>
+                        <label for="">短信动态码</label>
+                    </span>
+
+                    <input type="text" id="xin" name="xin">
+                </p>
+                <p>
+                    <span>
+                        <label for="">创建密码</label>
+                    </span>
+
+                    <input type="password" class="pass1" name="password" id="password">
+
+                </p>
+                <p>
+                    <span>
+                        <label for="">确认密码</label>
+                    </span>
+
+                    <input type="password" name="password1">
+
+                </p>
+                <p>
+                    <button class="btn">同意以下协议并注册</button>
+                </p>
+            </form>
+            <div class="xie">
+                <a href="">《美团用户服务协议》 </a>
+                <a href="">《美团隐私政策》</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer">
+            <div>
+                <a href="">©meituan.com</a>
+                <a href="">京ICP证070791号</a>
+                <span>京公网安备11010502025545号</span>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        jQuery.validator.addMethod('testTel', function (value) {
+            let reg = /^1[345789]\d{9}$/;
+            if (reg.test(value)) {
+                return true
+            }
+            return false
+        }, '手机号输入不正确');
+
+        jQuery.validator.addMethod('testXin', function (value) {
+            let reg = /^[0-9]\d{3,5}$/;
+            if(reg.test(value)){
+                return true
+            }
+            return false
+        })
+         jQuery.validator.addMethod('testpass',function(value){
+             let reg=/^[a-zA-Z1-9\*_]{4,6}$/;
+             if(reg.test(value)){
+                 return true
+             }
+             return false
+         },'密码输入不正确')
+        let w = $('#tel').focus(() => {
+            $('.m').css('display', 'none')
+        }).focusout(() => {
+        });
+        $('#box').validate({
+            rules: {
+                tel: {
+                    // 必须输入的字段。
+                    required: true,
+                    testTel: true
+                },
+                xin: {
+                    required: true,
+                    testXin: true
+                },
+                password: {
+                    required: true,
+                    testpass:true
+
+                },
+                password1: {
+                    required: true,
+                    // 输入值必须和 id名的值相同。
+                    equalTo: "#password"
+                }
+            },
+            messages: {
+                tel: {
+                    required: `请输入您的手机号码`,
+                    testTel: '请输入正确的11位手机号码'
+                },
+                xin: {
+                    required: `请输入短信动态码`,
+                    testXin: '数字密码长度为4-6'
+                },
+                password: {
+                    required: `请填写密码`,
+                    testpass:'密码可为字母、数字、下划线、*'
+                },
+                password1: {
+                    required: `请再次输入密码`,
+                    equalTo: '两次输入的密码不一致，请重新输入'
+                }
+            },
+            submitHandler: function () {
+              
+               pAjax({
+                   url:'../api/zhuce.php',
+                   type:'post',
+                   data:{
+                       tel:$('#tel').val(),
+                       password:$('#password').val()
+                   }
+
+               }).then(res=>{
+                   let span=$('<span class="aa"></span>');
+                   
+                   span.text(res)
+                    $('.aaa').append(span);
+                  if(res=='用户名注册成功'){
+                       location.href='./login.html'
+                  };
+               });
+               if($('.aa')[0]!=undefined){
+                   $('.aa').remove();
+               }
+            }
+        });
+    
+    </script>
+</body>
+
+</html>

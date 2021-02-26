@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../validation/dist/jquery.validate.min.js"></script>
+    <script src="../validation/dist/localization/messages_zh.min.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/cookie.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #main {
+            width: 100%;
+            height: 100%;
+        }
+
+        .main {
+            width: 1100px;
+            margin: auto;
+        }
+
+        .main .img1 {
+            display: block;
+            margin-top: 50px;
+            margin-bottom: 57px;
+        }
+
+        .box {
+            width: 1100px;
+            height: 400px;
+            position: relative;
+        }
+
+        .box form {
+            width: 270px;
+            height: 200px;
+            float: right;
+            /* background-color: aqua; */
+            margin-right: 182px;
+            margin-top: 40px;
+        }
+
+        .box .a1 {
+            font-size: 17px;
+            color: #666666;
+        }
+
+        .box .a2 {
+            margin-left: 85px;
+
+        }
+
+        .box .a2 a {
+            font-size: 13px;
+            color: #666666;
+            margin-top: 25px;
+        }
+
+        .box .a2 a img {
+            height: 14px;
+            margin-top: 5px;
+        }
+
+        .user {
+            width: 268px;
+            height: 34px;
+            border: 1px solid #ccc;
+            position: relative;
+        }
+
+        .user .a3 {
+            color: #797979;
+            font-size: 15px;
+            line-height: 34px;
+        }
+
+        .user .a4 {
+            color: #797979;
+            font-size: 13px;
+            line-height: 34px;
+        }
+
+        .user input {
+            height: 32px;
+            outline: none;
+            border: none;
+            position: absolute;
+            top: 0px;
+            left: 40px;
+
+        }
+
+        .user label {
+            position: absolute;
+            width: 270px;
+            height: 34px;
+            color: #666;
+            top: 5px;
+            left: 280px;
+        }
+
+        .pass {
+            width: 268px;
+            height: 34px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .pass span {
+            color: #dddddd;
+            line-height: 34px;
+            margin-left: 8px;
+        }
+
+        .pass input {
+            height: 32px;
+            outline: none;
+            border: none;
+            position: absolute;
+            top: 0px;
+            left: 40px;
+
+        }
+
+        .pass label {
+            position: absolute;
+            width: 270px;
+            height: 34px;
+            color: #666;
+            top: 5px;
+            left: 280px;
+        }
+
+        form>a {
+            margin-left: 200px;
+            font-size: 13px;
+            color: #fe8c00;
+
+        }
+
+        form a:hover {
+            color: #fe8c00;
+            text-decoration: none;
+        }
+
+        form button {
+            width: 268px;
+            height: 36px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            outline: none;
+            background-color: #ffc000;
+            /* position: relative; */
+        }
+
+        .box .a5 {
+            position: absolute;
+            right: 324px;
+            bottom: 121px;
+
+        }
+
+        .a5 span {
+            font-size: 13px;
+            color: #666666;
+            line-height: 30px;
+        }
+
+        .a5 a {
+            font-size: 13px;
+            color: #fe8c00;
+        }
+
+        .a5 a:hover {
+            text-decoration: none;
+            color: #fe8c00;
+        }
+
+        .box .a6 {
+            float: right;
+            margin-top: -80px;
+            border-top: 1px solid #ccc;
+            width: 270px;
+            margin-right: 182px;
+            position: relative;
+            height: 100px;
+        }
+
+        .box .a6 span {
+            background-color: #fff;
+            position: absolute;
+            top: -16px;
+            left: 70px;
+            padding: 0 5px;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .box .a6 div {
+            margin-top: 30px;
+
+        }
+
+        .box .a6 a {
+            display: block;
+            margin-left: 90px;
+        }
+
+        .box .a6 img {
+            margin-left: 20px;
+        }
+
+        .main .a7 {
+
+            width: 1100px;
+            border-bottom: 1px solid #eeeeee;
+            border-top: 1px solid #eeeeee;
+            height: 62px;
+        }
+
+        .main .a7 ul {
+            width: 477px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .main .a7 ul li {
+            border-left: 1px solid #eeeeee;
+            padding-left: 20px;
+            margin-top: 20px;
+        }
+
+        .main .a7 ul li:nth-child(1) {
+            border-left: none;
+            padding-left: 0px;
+
+        }
+
+        .main .a7 a {
+            color: #999999;
+            font-size: 13px;
+
+        }
+
+        .main .a7 ul a:hover {
+            text-decoration: none;
+        }
+
+        .main .a8 a,
+        span {
+            font-size: 13px;
+            color: #999999;
+            line-height: 50px;
+        }
+
+        .main .a8 a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="main">
+            <img src="https://s0.meituan.net/bs/file/?f=fe-sso-fs:build/assets/logo.6a89007.png" alt="" class="img1">
+
+            <div class="box">
+                <img src="https://s0.meituan.net/bs/file/?f=fe-sso-fs:build/page/static/banner/www.jpg" alt="">
+
+                <form action="" class="deng">
+                    <span class="a1">账号登录</span>
+                    <span class="a2"> <a href="">手机动态码登录<img
+                                src="https://s0.meituan.net/bs/file/?f=fe-sso-fs:build/assets/mobile.24bd95a.png"
+                                alt=""></a></span>
+                    <div class="user">
+                        <span class="a3">+</span>
+                        <span class="a4">86<</span> <input type="text" placeholder="手机号" name="tel" id="tel">
+                    </div>
+                    <div class="pass">
+                        <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+                        <input type="text" placeholder="密码" name="password" id="password">
+                    </div>
+                    <a href="">忘记密码?</a>
+                    <button id="btn">登录</button>
+
+
+                </form>
+                <div class="a5">
+                    <span>还没有账号？</span><a href="./zhuce.html">免费注册</a>
+                </div>
+                <div class="a6">
+                    <span>用合作网站账号登录</span>
+                    <div>
+                        <a href=""><img src="../img/2.png" alt=""><img src="../img/3.png" alt=""></a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="a7">
+                <ul>
+                    <li><a href="">关于美团</a></li>
+                    <li><a href="">加入我们</a></li>
+                    <li><a href="">商家入驻</a></li>
+                    <li><a href="">帮助中心</a></li>
+                    <li><a href="">美团手机版</a></li>
+                </ul>
+            </div>
+            <div class="a8">
+                <span>©2021</span>
+                <a href="">美团网团购</a>
+                <span>meituan.com</span>
+                <a href="">京ICP证070791号</a>
+                <span>京公网安备11010502025545号</span>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        jQuery.validator.addMethod('testTel', function (value) {
+            // 方法中必须返回布尔值
+            // value 就是你验证这个输入框输入的内容
+            let reg = /^1[345789]\d{9}$/;
+            if (reg.test(value)) {
+                return true
+            }
+            return false
+        }, '手机号输入不正确');
+        jQuery.validator.addMethod('testpass', function (value) {
+            // 方法中必须返回布尔值
+            // value 就是你验证这个输入框输入的内容
+            // 密码必须由数字或字母或*或_组成
+            let reg = /^[a-zA-z1-9_\*]{4,16}$/;
+            if (reg.test(value)) {
+                return true
+            }
+            return false
+        }, '密码输入不正确');
+
+        $('.deng').validate({
+            rules: {
+                tel: {
+                    // 必须输入的字段。
+                    required: true,
+                    testTel: true
+
+                },
+                password: {
+                    required: true,
+                    testpass: true
+
+                }
+            },
+            messages: {
+                tel: {
+                    required: '请输入账号',
+                    testTel: '手机号的长度只能为11位'
+                },
+                password: {
+                    required: '请输入密码',
+                    testpass: '密码必须由数字或字母或 * 或下划线组成'
+                }
+            },
+            submitHandler: function () {
+                console.log(1);
+                ajax({
+                    url: `../api/login.php`,
+                    type: 'post',
+                    data: {
+                        tel: $('#tel').val(),
+                        password: $('#password').val()
+                    },
+                    callback: function (res) {
+                        alert(res);
+                        if (res == '登录成功') {
+                            setCookie('login', tel.value);
+
+                            // 跳转页面 如果从鞍山等页面过来的时候登录成功返回页面
+                            // 否则就去到地址页面
+                            let url = localStorage.getItem('url');
+                            if (url) {
+                                location.href = url;
+                                // 登录成功的时候把url的这个localstorage值清除
+                                localStorage.removeItem('url');
+
+                            } else {
+                                location.href = './mei.html';
+                            }
+                        }
+                    }
+                })
+                //   console.log($('#password').val()); 
+                // })   
+                //   getData();
+                //  async function getData(){
+                //      let res=await pAjax({
+                //          url:'../api/login.php',
+                //          type:'post',
+                //          data:{
+                //              tel:$('#tel').val(),
+                //              password:$('#password').val()
+                //          },
+                //          callback:function(res){
+                //              console.log(res);
+                //           }
+                //      }); 
+                //  } 
+
+            }
+
+        });
+    </script>
+</body>
+
+</html>
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">

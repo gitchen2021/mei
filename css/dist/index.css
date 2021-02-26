@@ -1,0 +1,348 @@
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fe8c00;
+  text-decoration: none;
+}
+
+#header {
+  width: 100%;
+  height: 50px;
+  background-color: #F8F8F8;
+}
+#header .header {
+  height: 50px;
+  width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#header .header .nav1 {
+  margin-top: 15px;
+}
+#header .header .nav1 .a2 {
+  color: #747674;
+}
+#header .header .nav1 .a3 a {
+  margin-left: 5px;
+  color: #999999;
+}
+#header .header .nav1 .a3 :hover {
+  color: #FE8C00;
+}
+#header .header .nav1 .li {
+  margin-left: 30px;
+  color: #FE8C00;
+}
+#header .header .nav1 .a6 .ce {
+  margin-left: 10px;
+  color: #999999;
+}
+#header .header .nav1 .a6 :hover {
+  color: #FE8C00;
+}
+#header .header .nav2 {
+  width: 500px;
+  margin-top: 15px;
+}
+#header .header .nav2 .a5 {
+  color: #999999;
+  margin: 0 20px 0 20px;
+  position: relative;
+  float: left;
+}
+#header .header .nav2 .a5 ul {
+  width: 150px;
+  position: absolute;
+  top: 20px;
+  background-color: #fff;
+  display: none;
+  z-index: 10;
+}
+#header .header .nav2 .a5 ul li {
+  display: block;
+  line-height: 30px;
+  margin-left: 20px;
+}
+#header .header .nav2 .a5 ul li :hover {
+  color: #FE8C00;
+}
+#header .header .nav2 .a5 a {
+  color: #999999;
+}
+#header .header .nav2 .a5 :hover {
+  color: #FE8C00;
+}
+#header .header .nav2 .a5:hover ul {
+  display: block;
+}
+
+#search {
+  width: 100%;
+  height: 152px;
+  box-shadow: #ccc 0px 2px 3px 0px;
+}
+#search .search {
+  height: 152px;
+  width: 1300px;
+  margin: auto;
+  display: flex;
+  position: relative;
+}
+#search .search img {
+  height: 57px;
+  margin-top: 35px;
+}
+#search .search .input-group {
+  width: 690px;
+  margin: 55px 0 0 242px;
+}
+#search .search ul {
+  box-shadow: #ccc 0px 2px 3px 0px;
+  z-index: 10;
+}
+#search .search ul li {
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 10px;
+}
+#search .search ul li a {
+  color: #000;
+}
+#search .search ul li :hover {
+  color: #FE8C00;
+  cursor: pointer;
+}
+
+#main {
+  width: 100%;
+  height: 5858px;
+  background-color: #F8F8F8;
+}
+#main .main {
+  height: 5858px;
+  width: 1300px;
+  margin: auto;
+  background-color: #fff;
+}
+#main .main .cc {
+  border-bottom: 1px solid #E5E5E5;
+  width: 1300px;
+  height: 25px;
+  background-color: #F8F8F8;
+}
+#main .main .xuanze {
+  width: 1250px;
+  height: 115px;
+  border-bottom: 1px solid #ccc;
+  margin-left: 25px;
+  position: relative;
+}
+#main .main .xuanze > span {
+  float: left;
+  margin-top: 42px;
+}
+#main .main .xuanze .dropdown {
+  float: left;
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-top: 25px;
+}
+#main .main .xuanze .dropdown button {
+  width: 188px;
+  height: 48px;
+  z-index: 1;
+}
+#main .main .xuanze .dropdown button span {
+  margin-left: 80px;
+}
+#main .main .xuanze .shengfen .text1 {
+  width: 300px;
+}
+#main .main .xuanze .shengfen .text1 span {
+  float: left;
+  width: 300px;
+}
+#main .main .xuanze .shengfen .text1 li {
+  float: left;
+  width: 90px;
+}
+#main .main .xuanze .shengfen .text1 li a {
+  float: left;
+  width: 90px;
+}
+#main .main .xuanze .chengshi {
+  margin-right: 25px;
+}
+#main .main .xuanze .chengshi .text2 {
+  width: 600px;
+}
+#main .main .xuanze .chengshi .text2 li {
+  float: left;
+}
+#main .main .xuanze .sou {
+  margin-left: 50px;
+  float: left;
+}
+#main .main .xuanze .suoText {
+  margin-top: 35px;
+  width: 200px;
+  float: left;
+}
+#main .main .xuanze .sou1 {
+  overflow-y: scroll;
+  box-shadow: #ccc 0px 2px 3px 0px;
+  z-index: 10;
+}
+#main .main .remen {
+  width: 1250px;
+  height: 102px;
+  border-bottom: 1px solid #ccc;
+  margin-left: 25px;
+}
+#main .main .remen div {
+  float: left;
+  width: 70px;
+  line-height: 100px;
+}
+#main .main .remen ul {
+  width: 884px;
+  display: flex;
+  justify-content: space-around;
+}
+#main .main .remen ul li {
+  margin-top: 40px;
+}
+#main .main .remen ul li a {
+  color: #666666;
+}
+#main .main .city {
+  width: 1250px;
+  margin-left: 25px;
+}
+#main .main .city .anPing {
+  height: 126px;
+}
+#main .main .city .anPing span {
+  float: left;
+  width: 150px;
+  line-height: 126px;
+}
+#main .main .city .anPing ul {
+  width: 1043px;
+  display: flex;
+  justify-content: space-between;
+}
+#main .main .city .anPing ul a {
+  line-height: 126px;
+  font-size: 20px;
+  color: #666666;
+}
+#main .main .city div {
+  width: 1203px;
+}
+#main .main .city div span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #FFD000;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  margin-right: 25px;
+}
+#main .main .city div ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 20px 0 0 0;
+}
+#main .main .city div ul li {
+  height: 50px;
+  margin-right: 48px;
+}
+#main .main .city div ul li a {
+  color: #666666;
+}
+#main .main .city div ul li :hover {
+  cursor: pointer;
+  color: #FE8C00;
+}
+#main .main .dd {
+  border-top: 1px solid #E5E5E5;
+  width: 1300px;
+  height: 50px;
+  background-color: #F8F8F8;
+}
+
+#footer {
+  width: 100%;
+  height: 672;
+  background-color: #F8F8F8;
+}
+#footer .footer {
+  height: 672px;
+  width: 1300px;
+  margin: auto;
+  background-color: #F8F8F8;
+  border-top: 1px solid #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#footer .footer div {
+  margin: 64px 0 -30px -10px;
+}
+#footer .footer div ul li {
+  width: 145px;
+}
+#footer .footer div ul li span {
+  color: #333333;
+  font-size: 17px;
+}
+#footer .footer div ul li a {
+  color: #666666;
+  line-height: 30px;
+  font-size: 13px;
+}
+#footer .footer div ul li:hover a {
+  color: #FE8C00;
+}
+#footer .footer .foot1,
+#footer .footer .foot2 {
+  margin-left: 57px;
+}
+#footer .footer .foot5 {
+  margin-bottom: 100px;
+}
+#footer .footer .foot6 {
+  margin-top: 59px;
+}
+#footer .footer .foot9 {
+  margin-bottom: 100px;
+}
+#footer .footer .foot11 li,
+#footer .footer .foot12 li {
+  width: 250px;
+}
+#footer .footer .foot13,
+#footer .footer .foot14 {
+  margin-left: -10px;
+  margin-top: 8px;
+  list-style: none;
+}
+#footer .footer .foot13 :hover,
+#footer .footer .foot14 :hover {
+  color: #FE8C00;
+}
+#footer .footer .foot13 a,
+#footer .footer .foot14 a {
+  display: block;
+  font-size: 15px;
+  color: #666666;
+  margin-top: 30px;
+}
