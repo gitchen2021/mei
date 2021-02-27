@@ -1,0 +1,121 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "870964",
+      "name": "结婚",
+      "font_class": "jiehun",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "876124",
+      "name": "ktv",
+      "font_class": "ktv",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "1360794",
+      "name": "家装",
+      "font_class": "jiazhuang",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "1942545",
+      "name": "成绩",
+      "font_class": "chengji--",
+      "unicode": "e532",
+      "unicode_decimal": 58674
+    },
+    {
+      "icon_id": "3934898",
+      "name": "酒店",
+      "font_class": "jiudian",
+      "unicode": "e758",
+      "unicode_decimal": 59224
+    },
+    {
+      "icon_id": "6402662",
+      "name": "运动健身",
+      "font_class": "yundongjianshen",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    },
+    {
+      "icon_id": "8746094",
+      "name": "猫眼电影",
+      "font_class": "maoyandianying",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "8775850",
+      "name": "医疗健康",
+      "font_class": "yiliaojiankang",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "10264161",
+      "name": "亲子游",
+      "font_class": "qinziyou",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "10527808",
+      "name": "美食",
+      "font_class": "meishi",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "11352747",
+      "name": "酒吧",
+      "font_class": "jiuba",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "12012687",
+      "name": "机票火车票",
+      "font_class": "jipiaohuochepiao",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "13127456",
+      "name": "外卖",
+      "font_class": "waimai",
+      "unicode": "e56f",
+      "unicode_decimal": 58735
+    },
+    {
+      "icon_id": "14107753",
+      "name": "丽人",
+      "font_class": "liren",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "14288440",
+      "name": "生活服务",
+      "font_class": "shenghuofuwu-01",
+      "unicode": "e7ea",
+      "unicode_decimal": 59370
+    },
+    {
+      "icon_id": "14693228",
+      "name": "民宿",
+      "font_class": "minsu",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    }
+  ]
+}

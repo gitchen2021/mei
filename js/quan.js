@@ -36,7 +36,10 @@ function liBtn() {
   a.click(function () {
     let text = $(this).text();
     search();
-    $(this).attr('href', `https://bj.meituan.com/s/${text}`);
+   $(this).html();
+    let input=$('.search .form-control');
+   input.val($(this).html());
+    // $(this).attr('href', `https://bj.meituan.com/s/${text}`);
   })
 
 }
@@ -81,7 +84,7 @@ function shiMing(res, index) {
     a.click(function () {
 
       sheng.text($(this).text());
-      $(this).attr('href', `https://${item.acronym}.meituan.com/`);
+      // $(this).attr('href', `https://${item.acronym}.meituan.com/`);
 
     })
 
@@ -109,9 +112,13 @@ function Ping(data) {
           ul.append(li);
           a.css('color', '#000')
           a.click(function () {
-            $(this).attr('href', `https://${item1.acronym}.meituan.com/`)
+            let input=$('.main .xuanze .suoText');
+            $(this).html();
+           input.val($(this).html());
+            // $(this).attr('href', `https://${item1.acronym}.meituan.com/`)
           })
         }
+
         if (suoText.val() == item1.name.substr(0, suoText.val().length)) {
           let li = $('<li></li>');
           let a = $('<a></a>');
@@ -120,7 +127,10 @@ function Ping(data) {
           ul.append(li);
           a.css('color', '#000')
           a.click(function () {
-            $(this).attr('href', `https://${item1.acronym}.meituan.com/`)
+            let input=$('.main .xuanze .suoText');
+          $(this).html();
+           input.val($(this).html());
+            // $(this).attr('href', `https://${item1.acronym}.meituan.com/`)
           });
         }
 
